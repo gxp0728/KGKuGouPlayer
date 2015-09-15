@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>邓紫棋 - 泡沫</string>
+		<key>index</key>
+		<string>D</string>
+		<key>singer</key>
+		<string>邓紫棋</string>
+		<key>time</key>
+		<string>258</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>迪克牛仔 - 爱有奇迹</string>
+		<key>index</key>
+		<string>D</string>
+		<key>singer</key>
+		<string>迪克牛仔</string>
+		<key>time</key>
+		<string>267</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>筷子兄弟 - 父亲</string>
+		<key>index</key>
+		<string>K</string>
+		<key>singer</key>
+		<string>筷子兄弟</string>
+		<key>time</key>
+		<string>301</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>筷子兄弟 - 小苹果</string>
+		<key>index</key>
+		<string>K</string>
+		<key>singer</key>
+		<string>筷子兄弟</string>
+		<key>time</key>
+		<string>211</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>李易峰 - 剑伤</string>
+		<key>index</key>
+		<string>L</string>
+		<key>singer</key>
+		<string>李易峰</string>
+		<key>time</key>
+		<string>206</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>李宇春 - 1987我不知会遇见你</string>
+		<key>index</key>
+		<string>L</string>
+		<key>singer</key>
+		<string>李宇春</string>
+		<key>time</key>
+		<string>317</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>朴树 - 平凡之路</string>
+		<key>index</key>
+		<string>P</string>
+		<key>singer</key>
+		<string>朴树</string>
+		<key>time</key>
+		<string>301</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>齐晨 - 咱们结婚吧</string>
+		<key>index</key>
+		<string>Q</string>
+		<key>singer</key>
+		<string>齐晨</string>
+		<key>time</key>
+		<string>228</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>TFBOYS - 爱出发</string>
+		<key>index</key>
+		<string>T</string>
+		<key>singer</key>
+		<string>TFBOYS</string>
+		<key>time</key>
+		<string>225</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>TFBOYS - Heart</string>
+		<key>index</key>
+		<string>T</string>
+		<key>singer</key>
+		<string>TFBOYS</string>
+		<key>time</key>
+		<string>212</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>王菲 - 匆匆那年</string>
+		<key>index</key>
+		<string>W</string>
+		<key>singer</key>
+		<string>王菲</string>
+		<key>time</key>
+		<string>241</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>王蓉 - 小鸡小鸡</string>
+		<key>index</key>
+		<string>W</string>
+		<key>singer</key>
+		<string>王蓉</string>
+		<key>time</key>
+		<string>212</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>张杰 - 剑心</string>
+		<key>index</key>
+		<string>Z</string>
+		<key>singer</key>
+		<string>张杰</string>
+		<key>time</key>
+		<string>252</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>张靓颖 - 我们说好的</string>
+		<key>index</key>
+		<string>Z</string>
+		<key>singer</key>
+		<string>张靓颖</string>
+		<key>time</key>
+		<string>270</string>
+	</dict>
+</array>
+</plist>

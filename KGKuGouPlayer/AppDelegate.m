@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "KGWelcomePageViewController.h"
+#import "KGHomePageViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //程序启动完毕。1.取得本App的版本号
+    // NSString*newVersion=infoDict[  kCFBundleVersionKey ];
+    // [NSBundle mainBundle].version
+    NSDictionary*infoDict=  [NSBundle  mainBundle].infoDictionary;
+      NSString*newVersion=infoDict[@"CFBundleVersion"];
+    NSLog(@"CFBundleVersion:%@",newVersion);
+    //2.和之前保存的app版本号进行对比，如果相同，则从主页启动，如果不同从欢迎页启动
+    NSString*oldVersion=[[NSUserDefaults standardUserDefaults]objectForKey:@"CFBundleVersion"];
+    if (oldVersion==nil) {//如果等于nil 等于第一次装，一定要走欢迎页
+        UIStoryboard*storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];//首先找到storyboard
+        KGWelcomePageViewController*welVC=   [storyboard instantiateViewControllerWithIdentifier:@"welPage"];//再从story转到下个页面
+        self.window.rootViewController=welVC;//将根控制器设置为本地音乐 下次启动就不再显示欢迎页面
+
+    }else{
+        if ([oldVersion isEqualToString:newVersion]) {
+            //如果旧的版本号和新的版本号相同 从主页启动
+            UIStoryboard*storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];//首先找到storyboard
+            KGHomePageViewController*homeVC=   [storyboard instantiateViewControllerWithIdentifier:@"homePage"];//再从story转到下个页面
+            self.window.rootViewController=homeVC;//将根控制器设置为本地音乐 下次启动就不再显示欢迎页面
+
+            
+        }else{
+            //如果旧的版本号和新的版本号不相同 从欢迎页启动
+            UIStoryboard*storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];//首先找到storyboard
+            KGWelcomePageViewController*welVC=   [storyboard instantiateViewControllerWithIdentifier:@"welPage"];//再从story转到下个页面
+            self.window.rootViewController=welVC;//将根控制器设置为本地音乐 下次启动就不再显示欢迎页面
+
+        }
+    }
+    //3.如果版本不同，把新的App版本号保存起来
+    [[NSUserDefaults standardUserDefaults]setObject:newVersion forKey:@"CFBundleVersion"];//用偏好保存
     return YES;
 }
 
