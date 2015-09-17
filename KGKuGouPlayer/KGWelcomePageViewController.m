@@ -68,7 +68,7 @@
 -(void)startMusicTrip:(UIButton*)sender{
     //直接将主页设置为window的rootViewController 这样就不会再回到欢迎页
     UIStoryboard*storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];//首先找到storyboard
- KGHomePageViewController*homeVC=   [storyboard instantiateViewControllerWithIdentifier:@"homePage"];//再从story转到下个页面
+ UINavigationController*homeVC=   [storyboard instantiateViewControllerWithIdentifier:@"homePage"];//再从story转到下个页面
     [UIApplication sharedApplication].keyWindow.rootViewController=homeVC;//将根控制器设置为本地音乐 下次启动就不再显示欢迎页面
 }
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{

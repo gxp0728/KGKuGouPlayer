@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KGHomePageViewController : UIViewController
+@interface KGHomePageViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

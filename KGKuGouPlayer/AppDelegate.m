@@ -35,7 +35,7 @@
         if ([oldVersion isEqualToString:newVersion]) {
             //如果旧的版本号和新的版本号相同 从主页启动
             UIStoryboard*storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];//首先找到storyboard
-            KGHomePageViewController*homeVC=   [storyboard instantiateViewControllerWithIdentifier:@"homePage"];//再从story转到下个页面
+            UINavigationController*homeVC=   [storyboard instantiateViewControllerWithIdentifier:@"homePage"];//再从story转到下个页面
             self.window.rootViewController=homeVC;//将根控制器设置为本地音乐 下次启动就不再显示欢迎页面
 
             
